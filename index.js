@@ -31,7 +31,12 @@ const plot_data = [{
 const layout = {
     title: 'Temperature and Activity by Day',
     margin: {l: 180, r: 50, t: 50, b: 50},
-    yaxis: {title: 'Temperature (°C)', side: 'left'},
+    yaxis: {
+        title: 'Temperature (°C)', 
+        side: 'left',
+        titlefont: {color: 'blue', size: 14, family: 'Arial', weight: 600},
+        tickfont: {color: 'blue', size: 12, family: 'Arial', weight: 800}
+    },
     yaxis2: {
         title: 'Activity',
         overlaying: 'y',
@@ -42,7 +47,9 @@ const layout = {
         ticktext: ['Work', 'Fun', 'Event'],
         showline: true,
         linecolor: 'orange',
-        tickcolor: 'orange'
+        tickcolor: 'orange',
+        titlefont: {color: 'orange', size: 14, family: 'Arial', weight: 600},
+        tickfont: {color: 'orange', size: 14, family: 'Arial', weight: 800}
     }
 };
 
